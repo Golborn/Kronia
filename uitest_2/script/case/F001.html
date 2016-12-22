@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://172.27.3.24:7065/" />
+<title>F001 Consulta de boletas pagadas</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">F001 Consulta de boletas pagadas</td></tr>
+</thead><tbody>
+<!--/// Parámetros-->
+<tr>
+	<td>store</td>
+	<td>http://appswlsdesa.entel.cl/empresas/portalPrivado/proy3/jsp/loginUsuarioEntel.jsp</td>
+	<td>url</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>007459475</td>
+	<td>rutEmpresa</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>ENTEL\EVGarate</td>
+	<td>dominioUsuario</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Trinita8</td>
+	<td>password</td>
+</tr>
+<!--/// Login-->
+<tr>
+	<td>openAndWait</td>
+	<td>${url}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=RUTEMP</td>
+	<td>${rutEmpresa}</td>
+</tr>
+<!--Simular un blur para forzar la validación del RUT de empresa-->
+<tr>
+	<td>fireEvent</td>
+	<td>id=RUTEMP</td>
+	<td>blur</td>
+</tr>
+<!--Click en lupa para buscar RUT de administrador-->
+<tr>
+	<td>click</td>
+	<td>//img[@src='../img/buttons/btn_lupa.gif']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=admin</td>
+	<td>glob:*</td>
+</tr>
+<!--Dominio/usuario y password-->
+<tr>
+	<td>type</td>
+	<td>id=DOMUSU</td>
+	<td>${dominioUsuario}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=PASS</td>
+	<td>${password}</td>
+</tr>
+<!--Ingresar-->
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_ingresar</td>
+	<td></td>
+</tr>
+<!--/// F001 Consulta de boletas pagadas-->
+<tr>
+	<td>clickAndWait</td>
+	<td>id=iconHomeBreadcrum</td>
+	<td></td>
+</tr>
+<!--Navegar a detalle de boletas pagadas-->
+<tr>
+	<td>click</td>
+	<td>link=Facturación y pago</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Ver detalle de facturas</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='radioEstadoDocumento'])[@value=3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='radioTipoDocumento'])[@value='Boleta']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=cuenta</td>
+	<td>label=1.13545875</td>
+</tr>
+<!--Verificar presencia de tabla de resultados-->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//table[@id='date-es']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[@id='date-es']/tbody/tr/td[1]</td>
+	<td>glob:Boleta*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[@id='date-es']/tbody/tr/td[2]</td>
+	<td>glob:*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[@id='date-es']/tbody/tr/td[3]</td>
+	<td>regexp:[0-9]+-[0-9]+-[0-9]+</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[@id='date-es']/tbody/tr/td[4]</td>
+	<td>regexp:\$[\.0-9]+</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[@id='date-es']/tbody/tr/td[5]</td>
+	<td>glob:*</td>
+</tr>
+</tbody></table>
+</body>
+</html>

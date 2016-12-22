@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="onboarding">
+        <item>onboarding1d6</item>
+        <item>onboarding2d6</item>
+        <item>onboarding3d6</item>
+        <item>onboarding4d6</item>
+    </string-array>
+    <string-array name="onboarding_bodies">
+        <item>onboarding1_body</item>
+        <item>onboarding2_body</item>
+        <item>onboarding3_body</item>
+        <item>onboarding4_body</item>
+    </string-array>
+    <string-array name="onboarding_subtitles">
+        <item>onboarding1_subtitle</item>
+    </string-array>
+    <string-array name="onboarding_titles">
+        <item>onboarding1_title</item>
+        <item>onboarding2_title</item>
+        <item>onboarding3_title</item>
+        <item>onboarding4_title</item>
+    </string-array>
+    <string-array name="onboarding_update">
+        <item>onboarding4d6</item>
+        <item>onboarding2d6</item>
+        <item>onboarding3d6</item>
+    </string-array>
+    <string-array name="onboarding_update_bodies">
+        <item>onboarding4_body</item>
+        <item>onboarding2_body</item>
+        <item>onboarding3_body</item>
+    </string-array>
+    <array name="onboarding_update_subtitles" />
+    <string-array name="onboarding_update_titles">
+        <item>onboarding4_title</item>
+        <item>onboarding2_title</item>
+        <item>onboarding3_title</item>
+    </string-array>
+</resources>

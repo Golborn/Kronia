@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="portabilidad_block_padding">30.0dip</dimen>
+    <dimen name="portabilidad_button_size">18.0dip</dimen>
+    <dimen name="portabilidad_button_volver_size">20.0dip</dimen>
+    <dimen name="portabilidad_footer2_size">11.0dip</dimen>
+    <dimen name="portabilidad_footer_size">13.0dip</dimen>
+    <dimen name="portabilidad_subtitle_text_size">16.0dip</dimen>
+    <dimen name="portabilidad_text_size">14.0dip</dimen>
+    <dimen name="portabilidad_title_text_size">18.0dip</dimen>
+</resources>

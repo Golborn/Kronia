@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cl.entel.appswlsdesa.view.EntelTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/menu_text" android:gravity="center" android:id="@id/txt_no_connection" android:background="@color/gray_alpha" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_internet_conection"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

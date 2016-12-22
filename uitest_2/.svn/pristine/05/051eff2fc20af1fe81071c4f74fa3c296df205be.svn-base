@@ -1,0 +1,121 @@
+package cl.entel.test;
+
+import java.net.URL;
+import java.util.concurrent.TimeUnit;
+import org.apache.logging.log4j.LogManager;
+import org.junit.*;
+import static org.junit.Assert.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import cl.entel.test.util.*;
+
+public class TestWebA000 {
+
+	private static final String HOST = "appium.host";
+	private static final String PORT = "appium.port";
+
+	private static final int TIMEOUT_SECONDS = 10;
+
+	private WebDriver driver;
+	private String url;
+	private String baseUrl = "http://entel.cl/";
+	private boolean acceptNextAlert = true;
+	private StringBuffer verificationErrors = new StringBuffer();
+
+	private org.apache.logging.log4j.Logger log;
+	private MyProperties my;
+
+	public TestWebA000() {
+		this.log = LogManager.getLogger(TestWebA000.class);
+		this.my = new MyProperties(log);
+	}
+
+	@Before
+	public void setUp() throws Exception {
+		url = "http://" + my.property(HOST, "localhost") + ":" + my.property(PORT, "4723") + "/wd/hub";
+	}
+
+	@SuppressWarnings("static-access")
+	@Test
+	public void testA000() throws Exception {
+		log.info("Conectando con servidor Selenium: " + url);
+		// testH004For(new RemoteWebDriver(new URL(url), DesiredCapabilities.internetExplorer()));
+	//	testH004For(new RemoteWebDriver(new URL(url), DesiredCapabilities.chrome()));
+	//	testH004For(new RemoteWebDriver(new URL(url), DesiredCapabilities.firefox()));
+		testH004For(new RemoteWebDriver(new URL(url), DesiredCapabilities.android().firefox()));
+	}
+
+	public void testH004For(WebDriver driver) throws Exception {
+		this.driver = driver;
+		driver.manage().timeouts().implicitlyWait(TIMEOUT_SECONDS, TimeUnit.SECONDS);
+
+
+		// // Login
+		// open | / | 
+		driver.get(baseUrl + "/");
+		// click | id=MovilVisible | 
+		driver.findElement(By.id("MovilVisible")).click();
+		// type | id=MovilVisible | 965827579
+		driver.findElement(By.id("MovilVisible")).clear();
+		driver.findElement(By.id("MovilVisible")).sendKeys("965827579");
+		// type | id=Rut | 5002451
+		driver.findElement(By.id("Rut")).clear();
+		driver.findElement(By.id("Rut")).sendKeys("5002451");
+		// type | id=PIN | 4297
+		driver.findElement(By.id("PIN")).clear();
+		driver.findElement(By.id("PIN")).sendKeys("4297");
+		// click | id=LB_btnLoginEntel | 
+		driver.findElement(By.id("LB_btnLoginEntel")).click();
+		// // A000 Verificar que estamos en página principal
+		// verifyText | //div[@id='cabecera_mientel']/table/tbody/tr/td[2] | Mi Entel
+		try {
+			assertEquals("Mi Entel", driver.findElement(By.xpath("//div[@id='cabecera_mientel']/table/tbody/tr/td[2]")).getText());
+		} catch (Error e) {
+			verificationErrors.append(e.toString());
+		}
+
+		driver.quit();
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		String verificationErrorString = verificationErrors.toString();
+		if (!"".equals(verificationErrorString)) {
+			fail(verificationErrorString);
+		}
+	}
+
+	private boolean isElementPresent(By by) {
+		try {
+			driver.findElement(by);
+			return true;
+		} catch(NoSuchElementException e) {
+			return false;
+		}
+	}
+
+	private boolean isAlertPresent() {
+		try {
+			driver.switchTo().alert();
+			return true;
+		} catch(NoAlertPresentException e) {
+			return false;
+		}
+	}
+
+	private String closeAlertAndGetItsText() {
+		try {
+			Alert alert = driver.switchTo().alert();
+			String alertText = alert.getText();
+			if(acceptNextAlert) {
+				alert.accept();
+			} else {
+				alert.dismiss();
+			}
+			return alertText;
+		} finally {
+			acceptNextAlert = true;
+		}
+	}
+}

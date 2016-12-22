@@ -1,0 +1,89 @@
+package cl.entel.test;
+import java.net.URL;
+
+import org.apache.logging.log4j.Logger;
+import org.junit.After;
+import org.junit.Before;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import cl.entel.test.util.Mobile;
+import cl.entel.test.util.MyProperties;
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidElement;
+public class dos {
+
+	private static AppiumDriver<AndroidElement> driver;
+	WebDriver driverChrome = new ChromeDriver();
+	
+	private WebDriverWait wait;
+	private static final String HOST = "appium.host";
+	private static final String PORT = "appium.port";
+
+	private static final int TIMEOUT_SECONDS = 10;
+
+	private static final String APK =  "driverChrome";
+	private static final String PKG = "cl.entel.appswlsdesa";
+	private static final String ACTIVITY = "cl.entel.appswlsdesa.SplashscreenActivity";
+
+	private Logger log;
+	private MyProperties my;
+	
+		
+		public void dos() throws Exception {
+		/*File directorio  = new File("C:\\Users\\hp-pc\\Desktop\\Personas_Web_Mobile");
+		directorio.mkdirs();*/
+		
+
+		
+		//WebDriver driver = new FirefoxDriver();
+	//	String ruta = "C:\\Users\\hp-pc\\Desktop\\Personas_Web_Mobile\\";
+	//	driver.manage().window().maximize();
+		driver.get("http://appswls.entel.cl/mientel/login.action");
+		driver.findElement(By.id("msisdn")).clear();
+	    driver.findElement(By.id("msisdn")).sendKeys("982220871");
+	    driver.findElement(By.id("rut")).clear();
+	    driver.findElement(By.id("rut")).sendKeys("14.343.974-7");
+	    driver.findElement(By.id("pin")).clear();
+	    driver.findElement(By.id("pin")).sendKeys("8888");
+	    driver.findElement(By.id("entrar")).click();
+	   // ScreenShot.captureScreen(ruta+"imagen1.png");
+	    Thread.sleep(5000);
+	    driver.findElement(By.linkText("Consideraciones")).click();
+	    Thread.sleep(5000);
+	    //ScreenShot.captureScreen(ruta+"imagen2.png"); 
+	    Thread.sleep(9000);
+	    driver.close();
+	}
+	
+	
+	@Before
+	public void setUp() throws Exception {
+		String url = "http://" + my.property(HOST, "localhost") + ":" + my.property(PORT, "4723") + "/wd/hub";
+		
+		driver = new AndroidDriver<AndroidElement>(new URL(url), Mobile.setup( APK, PKG, ACTIVITY));
+		wait = new WebDriverWait(driver, TIMEOUT_SECONDS);
+	}
+	
+	
+	@After
+	public void tearDown() throws Exception {
+		driver.quit();
+	}
+
+	private void wait(By element) {
+		wait.until(ExpectedConditions.presenceOfElementLocated(element));
+	}
+
+	private void typewrite(By element, String text) {
+		driver.findElement(element).sendKeys(text);
+	}
+
+	private void tap(By element) {
+		driver.findElement(element).click();
+	}
+}

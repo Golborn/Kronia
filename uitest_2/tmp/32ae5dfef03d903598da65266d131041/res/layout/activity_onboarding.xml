@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:background="@drawable/bg_login" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <android.support.v4.view.ViewPager android:id="@id/tutorial_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.viewpagerindicator.CirclePageIndicator android:id="@id/page_indicator" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="40.0dip" android:layout_alignParentBottom="true" app:strokeWidth="0.0dip" app:fillColor="@color/entel_orange" app:pageColor="@android:color/white" />
+    <ImageView android:layout_width="53.5dip" android:layout_height="54.0dip" android:src="@drawable/ic_onboarding_logo" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <FrameLayout android:id="@id/close_btn" android:paddingLeft="30.0dip" android:paddingTop="18.0dip" android:paddingRight="12.0dip" android:paddingBottom="30.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <Button android:background="@drawable/selector_ic_onboarding_close" android:clickable="false" android:duplicateParentState="true" android:layout_width="22.5dip" android:layout_height="22.5dip" android:scaleType="centerInside" />
+    </FrameLayout>
+</RelativeLayout>

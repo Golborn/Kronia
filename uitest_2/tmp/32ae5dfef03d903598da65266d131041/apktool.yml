@@ -1,0 +1,20 @@
+version: 2.0.3
+apkFileName: 32ae5dfef03d903598da65266d131041.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '9'
+  targetSdkVersion: '23'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '11'
+  versionName: 1.1.5
+sharedLibrary: false
+unknownFiles:
+  org/jsoup/nodes/entities-base.properties: '8'
+  org/jsoup/nodes/entities-full.properties: '8'
+doNotCompress:
+- arsc

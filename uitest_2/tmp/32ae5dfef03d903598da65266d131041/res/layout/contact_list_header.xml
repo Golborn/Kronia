@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/menu_background" android:paddingLeft="25.0dip" android:paddingTop="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cl.entel.appswlsdesa.view.EntelPortTextView android:textSize="@dimen/portabilidad_title_text_size" android:textColor="@color/entel_orange" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_actualizacion" />
+    <RelativeLayout android:paddingTop="30.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <cl.entel.appswlsdesa.view.EntelPortTextView android:textSize="@dimen/portabilidad_subtitle_text_size" android:textColor="@color/entel_orange" android:id="@id/par" android:paddingRight="@dimen/portabilidad_parentesis_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{" />
+        <cl.entel.appswlsdesa.view.EntelPortTextView android:textSize="@dimen/portabilidad_subtitle_text_size" android:textColor="@color/gray_actualiza" android:id="@id/actualiza_agenda" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contactos_agenda" android:layout_toRightOf="@id/par" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/header_box_back" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/portabilidad_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total_contactos" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/portabilidad_text_size" android:id="@id/textViewTotalContact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\ 0" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:paddingTop="30.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <cl.entel.appswlsdesa.view.EntelPortTextView android:textSize="@dimen/portabilidad_subtitle_text_size" android:textColor="@color/entel_orange" android:id="@id/par3" android:paddingRight="@dimen/portabilidad_parentesis_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{" />
+        <cl.entel.appswlsdesa.view.EntelPortTextView android:textSize="@dimen/portabilidad_subtitle_text_size" android:textColor="@color/gray_actualiza" android:id="@id/actualiza_modificar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contactos_modificar" android:layout_toRightOf="@id/par3" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/detallesTotalContactos" android:background="@color/header_box_back" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+        <TextView android:textSize="@dimen/portabilidad_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/portabilidad_text_size" android:id="@id/textViewTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\ 0" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/gray3_actualiza" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <cl.entel.appswlsdesa.view.EntelPortTextView android:textSize="@dimen/portabilidad_subtitle_text_size" android:textColor="@color/menu_background" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/contactos" android:layout_weight="1.0" />
+        <cl.entel.appswlsdesa.view.EntelPortTextView android:textSize="@dimen/portabilidad_subtitle_text_size" android:textColor="@color/menu_background" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@id/title_table_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/num_actual" android:layout_weight="1.0" />
+        <cl.entel.appswlsdesa.view.EntelPortTextView android:textSize="@dimen/portabilidad_subtitle_text_size" android:textColor="@color/menu_background" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@id/title_table_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/num_prop" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

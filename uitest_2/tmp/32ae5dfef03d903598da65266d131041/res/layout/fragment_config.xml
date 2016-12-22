@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/config_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cl.entel.appswlsdesa.view.EntelTextView android:textSize="@dimen/config_text_size_text" android:textColor="@color/config_text" android:paddingBottom="@dimen/config_item_margin_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/datamanager_text" />
+    <View android:background="@color/config_line_separator" android:paddingBottom="@dimen/config_separator_margin" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <cl.entel.appswlsdesa.view.EntelTextView android:textSize="@dimen/config_text_size_text" android:textColor="@color/config_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/datamanager_config_text" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/chk_send_information" android:paddingRight="-5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="@color/config_line_separator" android:paddingTop="@dimen/config_separator_margin" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

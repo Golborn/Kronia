@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://172.27.3.24:7065/" />
+<title>ST0001 Guía de autoatención</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ST0001 Guía de autoatención</td></tr>
+</thead><tbody>
+<!--/// Parámetros-->
+<tr>
+	<td>store</td>
+	<td>http://appswlsdesa.entel.cl/empresas/portalPrivado/proy3/jsp/loginUsuarioEntel.jsp</td>
+	<td>url</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>007459475</td>
+	<td>rutEmpresa</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>ENTEL\EVGarate</td>
+	<td>dominioUsuario</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Trinita8</td>
+	<td>password</td>
+</tr>
+<!--/// Login-->
+<tr>
+	<td>openAndWait</td>
+	<td>${url}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=RUTEMP</td>
+	<td>${rutEmpresa}</td>
+</tr>
+<!--Simular un blur para forzar la validación del RUT de empresa-->
+<tr>
+	<td>fireEvent</td>
+	<td>id=RUTEMP</td>
+	<td>blur</td>
+</tr>
+<!--Click en lupa para buscar RUT de administrador-->
+<tr>
+	<td>click</td>
+	<td>//img[@src='../img/buttons/btn_lupa.gif']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=admin</td>
+	<td>glob:*</td>
+</tr>
+<!--Dominio/usuario y password-->
+<tr>
+	<td>type</td>
+	<td>id=DOMUSU</td>
+	<td>${dominioUsuario}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=PASS</td>
+	<td>${password}</td>
+</tr>
+<!--Ingresar-->
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_ingresar</td>
+	<td></td>
+</tr>
+<!--/// ST0001 Guía de autoatención-->
+<tr>
+	<td>clickAndWait</td>
+	<td>id=iconHomeBreadcrum</td>
+	<td></td>
+</tr>
+<!--Navegar a Solicitar retiro de equipo-->
+<tr>
+	<td>click</td>
+	<td>css=#menuSoporte &gt; div.xp-tabmenu-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Solicitar servicio técnico</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=[ Solicitar retiro de equipo_</td>
+	<td></td>
+</tr>
+<!--Verificar que servicio para SANTIAGO esté disponible-->
+<tr>
+	<td>select</td>
+	<td>id=comuna</td>
+	<td>label=SANTIAGO</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=#infoSole &gt; div</td>
+	<td>glob:*Disponible*</td>
+</tr>
+</tbody></table>
+</body>
+</html>

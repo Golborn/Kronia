@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/btn_config" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginBottom="1.0dip" android:src="@drawable/ic_config" />
+        <cl.entel.appswlsdesa.view.EntelTextView android:textSize="13.0sp" android:textColor="@color/logout_btn" android:gravity="center_vertical" android:paddingLeft="8.0dip" android:paddingRight="25.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/config_btn" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/btn_logout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+        <ImageView android:id="@id/imageView2" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginBottom="1.0dip" android:src="@drawable/ic_logout" />
+        <cl.entel.appswlsdesa.view.EntelTextView android:textSize="13.0sp" android:textColor="@color/logout_btn" android:gravity="center_vertical" android:paddingLeft="8.0dip" android:paddingRight="25.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/logout_btn" />
+    </LinearLayout>
+</LinearLayout>

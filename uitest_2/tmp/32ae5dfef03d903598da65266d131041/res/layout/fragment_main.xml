@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.handmark.pulltorefresh.library.PullToRefreshWebView android:id="@id/entelWebView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true" ptr:ptrMode="pullDownFromTop" xmlns:ptr="http://schemas.android.com/apk/res-auto" />
+    <ProgressBar android:id="@id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/connection_error_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ImageButton android:id="@id/btn_reload" android:background="@android:color/transparent" android:layout_width="69.0dip" android:layout_height="60.0dip" android:src="@drawable/ic_reload" android:scaleType="centerInside" />
+    </LinearLayout>
+</RelativeLayout>

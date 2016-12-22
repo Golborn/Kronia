@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="pull_to_refresh_pull_label">Pull to refresh…</string>
+    <string name="pull_to_refresh_refreshing_label">Loading…</string>
+    <string name="pull_to_refresh_release_label">Release to refresh…</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="action_settings">Settings</string>
+    <string name="activity_title_actualizacion">Agenda</string>
+    <string name="actualiza_detalle">"Con esta herramienta podrás actualizar los números de tu agenda telefónica, para que no tengas problemas al marcar, una vez que se implemente la ampliación numérica.
+Tus números móviles adoptarán este formato:
++56 9 1234 1234
+Tus números fijos adoptarán este formato:
++ 56 2 1234 1234
+Te recordamos que si desinstalas esta aplicación, perderás el respaldo de la última modificación realizada."</string>
+    <string name="actualiza_tu_agenda">Actualiza tu agenda telefónica</string>
+    <string name="actualizacion_agenda">Actualización Agenda</string>
+    <string name="alertbox_cancel_button">No, gracias</string>
+    <string name="alertbox_ok_button">Sí, quiero participar</string>
+    <string name="alertbox_text">Ayúdanos a mejorar nuestro servicio. Contesta esta breve encuesta</string>
+    <string name="app_name">Entel</string>
+    <string name="ask_for_manual_permission">Mi entel necesita permisos de lectura para poder verificar el formato de tus contactos, por favor modifica los permisos asignados a esta aplicación desde la configuración de tu teléfono.</string>
+    <string name="ask_for_manual_permission_escritura">Mi entel necesita permisos de escritura para poder actualizar tus contactos, por favor modifica los permisos asignados a esta aplicación desde la configuración de tu teléfono.</string>
+    <string name="autorizo">Si, autorizo</string>
+    <string name="ayuda">Ayuda y Soporte</string>
+    <string name="backup_seguro">¿Estás seguro de restaurar tus contactos?</string>
+    <string name="beneficios">Descuentos Zona</string>
+    <string name="bolsas">Mis Bolsas</string>
+    <string name="btn_backup">[ Restaurar contactos ]</string>
+    <string name="btn_continuar">[ Continuar_</string>
+    <string name="btn_volver">[ Volver ]</string>
+    <string name="button_font">font/DINNextLTPro-Regular.otf</string>
+    <string name="cancel">No</string>
+    <string name="config_btn">Configuración</string>
+    <string name="config_title">Configuración_</string>
+    <string name="connection_error">Error de conexión</string>
+    <string name="consulta_saldo">Consulta de Saldo</string>
+    <string name="consulta_trafico">Consulta de Tráfico</string>
+    <string name="contactos">Contactos</string>
+    <string name="contactos_agenda">Números de tu Agenda</string>
+    <string name="contactos_modificar">Números a modificar</string>
+    <string name="continuar">Continuar</string>
+    <string name="copyright">"Copyright Empresa Nacional de Telecomunicaciones S.A.
+Todos los derechos reservados"</string>
+    <string name="datamanager_alertbox_cancel_button">No, gracias</string>
+    <string name="datamanager_alertbox_ok_button">Sí, autorizo</string>
+    <string name="datamanager_config_text">Autorizo</string>
+    <string name="datamanager_subtitle">[Acerca del diagnóstico y la privacidad...]</string>
+    <string name="datamanager_text">Ayúdanos a mejorar nuestros productos para ofrecerte mejores servicios, enviando automáticamente tus datos de consumo de Wi-Fi. No accedemos al contenido de la navegación ni comunicaremos los datos recabados a terceros.</string>
+    <string name="datamanager_title">Diagnóstico y uso</string>
+    <string name="en_formato_correcto">Todos tus contactos se encuentran en el formato correcto.</string>
+    <string name="espere">Espere mientras se realiza la operación...</string>
+    <string name="estado_cuenta">Estado de Cuenta</string>
+    <string name="hogar_error">Teléfono ingresado pertenece a producto Hogar</string>
+    <string name="inicio">Inicio</string>
+    <string name="key_hint">Clave</string>
+    <string name="leyendo_contactos">Leyendo Contactos...</string>
+    <string name="loading_text">Cargando</string>
+    <string name="loading_title">Entel</string>
+    <string name="login">Login</string>
+    <string name="login_btn">[ Ingresar_</string>
+    <string name="login_error">Alguno de los datos ingresados es incorrecto</string>
+    <string name="login_error_phone_size">El número de teléfono debe contener 9 dígitos</string>
+    <string name="login_error_pin">Debes ingresar tu clave</string>
+    <string name="login_error_rut">Debes introducir un número de Rut</string>
+    <string name="login_incorrect_error_rut">RUT Inválido</string>
+    <string name="login_phone_error">Debes introducir un número de teléfono</string>
+    <string name="login_txt">"Bienvenido a
+Mi Entel"</string>
+    <string name="logout_btn">Cerrar Sesión</string>
+    <string name="logout_error">Se ha producido un error en el logout</string>
+    <string name="modificacion_seguro">¿Estás seguro de realizar la modificación?</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="no_internet_conection">No se ha detectado conexión a internet</string>
+    <string name="noautorizo">No, gracias</string>
+    <string name="num_actual">Número Actual</string>
+    <string name="num_ante">Número Anterior</string>
+    <string name="num_modif">Número Modificado</string>
+    <string name="num_prop">Número Propuesto</string>
+    <string name="ok">Si</string>
+    <string name="onboarding1_body">"Desde ahora te será más fácil tener el
+control de tu servicio de telefonía móvil."</string>
+    <string name="onboarding1_subtitle">a la App Entel!</string>
+    <string name="onboarding1_title">Bienvenido_</string>
+    <string name="onboarding2_body">"Revisa el estado de tu cuenta, las
+características de tu plan y mantente al
+tanto de tu tráfico de minutos, mensajes
+de texto y consumo de datos."</string>
+    <string name="onboarding2_title">Si tienes Plan_</string>
+    <string name="onboarding3_body">"Revisa tu saldo, recarga en línea y
+compra bolsas cuando quieras."</string>
+    <string name="onboarding3_title">Si tienes Prepago_</string>
+    <string name="onboarding4_body">"¡Conoce todos los beneficios que la
+zOna Entel tiene para ti!"</string>
+    <string name="onboarding4_title">Beneficios_</string>
+    <string name="operacion_exitosa">Tus contactos han sido modificados con éxito.</string>
+    <string name="owner_label">Titular:</string>
+    <string name="permission_ask">Para poder actualizar tu agenda telefónica, la aplicación Entel desea acceder a tus contactos.</string>
+    <string name="permission_ask2">Mi Entel necesita acceso de escritura a tus contactos para actualizarlos</string>
+    <string name="phone_hint">Teléfono (9 dígitos)</string>
+    <string name="plan">Mi Plan</string>
+    <string name="planes_tarifas">Planes y Tarifas</string>
+    <string name="presta_luka">Presta Luka</string>
+    <string name="recargas">Recargas</string>
+    <string name="recover_btn">Olvidé mi clave</string>
+    <string name="recover_title">Recuperar Contraseña</string>
+    <string name="register_btn">Registrarme en Mi Entel</string>
+    <string name="register_title">Registro</string>
+    <string name="reload">Recargar</string>
+    <string name="restaurado_exitoso">Todos tus contactos fueron restaurados con éxito.</string>
+    <string name="restaurando_contactos">Restaurando Contactos...</string>
+    <string name="rut_hint">Rut usuario</string>
+    <string name="saber">Debes saber</string>
+    <string name="saber_detalle">En caso de desinstalar esta aplicación, perderás el respaldo de la última modificación realizada.</string>
+    <string name="seguro">¿Estás seguro?</string>
+    <string name="survey_header">Encuesta de Satisfacción</string>
+    <string name="tiendas">Tiendas</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_contact_list">ContactListActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_splashscreen">SplashscreenActivity</string>
+    <string name="title_actualizacion">Actualización agenda</string>
+    <string name="total">Total</string>
+    <string name="total_contactos">Total números</string>
+    <string name="total_contactos_modificados">Total números modificados</string>
+    <string name="ultimo_backup">Tu último respaldo fue realizado con fecha</string>
+    <string name="unknown_error">Este servicio no se encuentra disponible, inténtalo más tarde</string>
+    <string name="ya_modificados">Todos tus contactos ya se encuentran modificados.</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/bg_login" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                    <ImageView android:id="@id/imageView" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/logo_entel" />
+                    <cl.entel.appswlsdesa.view.EntelTextView android:textSize="30.0sp" android:textStyle="bold" android:textColor="@color/login_txt" android:gravity="center" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/login_txt" />
+                    <cl.entel.appswlsdesa.view.EntelEditText android:textColorHint="@color/hint_color" android:id="@id/et_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/phone_hint" android:ems="10" android:maxLength="9" android:inputType="number" />
+                    <cl.entel.appswlsdesa.view.EntelEditText android:textColorHint="@color/hint_color" android:id="@id/et_rut" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:hint="@string/rut_hint" android:ems="10" android:maxLength="10" android:inputType="text" />
+                    <cl.entel.appswlsdesa.view.EntelEditText android:textColorHint="@color/hint_color" android:id="@id/et_key" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:hint="@string/key_hint" android:ems="10" android:password="true" android:maxLength="4" android:inputType="number" />
+                    <Button android:textSize="22.0sp" android:textColor="@android:color/white" android:id="@id/btn_login" android:background="@drawable/btn_signin_selector" android:layout_width="fill_parent" android:layout_height="47.0dip" android:layout_marginTop="30.0dip" android:text="@string/login_btn" android:textAllCaps="false" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:layout_marginBottom="30.0dip">
+                        <cl.entel.appswlsdesa.view.EntelTextView android:textSize="13.0sp" android:textColor="@drawable/btn_orange_selector" android:ellipsize="end" android:layout_gravity="left" android:id="@id/btn_register" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/register_btn" android:lines="1" />
+                        <cl.entel.appswlsdesa.view.EntelTextView android:textSize="13.0sp" android:textColor="@drawable/btn_orange_selector" android:ellipsize="end" android:gravity="right" android:id="@id/btn_recover" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/recover_btn" android:lines="1" />
+                    </LinearLayout>
+                </LinearLayout>
+                <FrameLayout android:id="@id/open_onboarding_btn" android:paddingLeft="30.0dip" android:paddingTop="18.0dip" android:paddingRight="12.0dip" android:paddingBottom="30.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                    <Button android:background="@drawable/selector_ic_onboarding" android:clickable="false" android:duplicateParentState="true" android:layout_width="22.5dip" android:layout_height="22.5dip" android:scaleType="centerInside" />
+                </FrameLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
